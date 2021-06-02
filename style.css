@@ -1,0 +1,231 @@
+h1{
+    color: red;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgb(78, 9, 9);
+}
+
+nav {
+    background-color:coral;
+    text-align: center;
+}
+
+.nav-wrapper {
+    background: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.body {
+    color: rgb(1, 109, 211);
+    border: 2px dashed rgb(24, 24, 194);
+    margin: 10px 990px 5px 5px;
+    padding-left: 20px;
+}
+
+.DemoContact {
+    background: rgb(240, 236, 231);
+}
+
+
+.Box {
+    
+    height: 200px;
+    width: 200px;
+    background:blue;
+    margin: 10px;
+    
+}
+
+@keyframes fadeMe {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rotation {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+
+}
+
+@keyframes getBigger{
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(0.5);}
+}
+
+@keyframes changeColor{
+    0% {background: rgb(100, 5, 5);}
+    25% {background: rgb(153, 86, 9);}
+    50% {background: rgb(206, 202, 7);}
+    75% {background: rgb(12, 191, 204);}
+    100% {background: rgb(100, 5, 87);}
+
+}
+
+@keyframes MoveBox {
+    0% {left: 0px; top: 0px;}
+    25% {left: 100px; top: 0px;}
+    50% {left: 100px; top: 200px;}
+    75% {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+}
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: 7;
+    animation-timing-function: ease-in-out;
+    border-radius: 10px;
+    background-image: radial-gradient(circle,red,orange,yellow,maroon,rgb(13, 3, 32),red);
+}
+
+#box3 {
+    animation: getBigger 5s 10 ease-in;
+    border-radius: 50%;
+    background-color: aqua; 
+    
+}
+
+#box4 {
+    animation: changeColor 7s 5 forwards;
+}
+
+#box5 {
+    position: relative;
+    background: greenyellow;
+    animation: MoveBox 10s 10;
+}
+
+#box6 {
+    top: 10px;
+    left: 20px;
+    position: relative;
+}
+
+.circle-Img {
+    border-radius: 50%;
+    box-shadow: 10px 10px 3px rgb(80, 23, 23);
+
+}
+
+.square-img {
+    box-shadow: 10px 5px 3px rgb(10, 10, 109);
+}
+
+.flex {
+    margin: 10px;
+    border: 3px solid black;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-arounds;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 10px;
+}
+
+.input-field {
+    margin: 20px;
+}
+
+/* html {
+    background-image: linear-gradient(to left, violet, pink, purple,blue);
+
+} */
+
+form input, textarea, button {
+    display: block;
+    margin: 10;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 20% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: antiquewhite;
+    color: #444;
+  }
+
+  .box {
+    background-color: antiquewhite;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+  }
+
+  .a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content= center;
+  }
+  .b {
+    grid-column: col 4 / span  2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content= center;
+  }
+  .c {
+    grid-column: col / span 5 ;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content= center;
+    background-image: linear-gradient(azure,lime);
+  }
+  .d {
+    grid-column: col 2 / span  1 ;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content= center;
+  }
+
+  .e {
+    grid-column: col 4/ span  1;
+    grid-row: row 3;
+    display: flex;
+    justify-content= center;
+  }
+
+  .f {
+    grid-column: col 3 / span 1;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display: flex;
+    justify-content= center;
+    background-image: linear-gradient(lime,aqua);
+  }
